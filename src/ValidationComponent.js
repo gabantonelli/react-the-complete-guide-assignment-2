@@ -5,6 +5,8 @@ const validationComponent = (props) => {
 
     if (props.length < 5) {
         message = (<p>Message too short!</p>)
+    } else if (props.length > 40) {
+        message = (<p>Message too long!</p>)
     }
 
     return message;
